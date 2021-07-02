@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
+const naval = 2;
 const AddEvents = () => {
   const [imageURL, setImageURL] = useState();
   const {
@@ -37,6 +38,8 @@ const AddEvents = () => {
       });
   };
   return (
+    // habi jabi
+
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input name="name" defaultValue="excting event" {...register("name")} />
@@ -51,3 +54,4 @@ const AddEvents = () => {
 };
 
 export default AddEvents;
+S;
